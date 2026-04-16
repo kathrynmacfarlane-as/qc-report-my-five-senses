@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QC Report — My Five Senses — 2026-03-24</title>
+<meta name="description" content="E-book quality assessment report for My Five Senses (Kindergarten, Reading's a Breeze series). Overall score: 83% — Conditional Pass.">
+<meta property="og:title" content="QC Report — My Five Senses">
+<meta property="og:description" content="E-book quality assessment — Kindergarten, Reading's a Breeze series. Overall score: 83%.">
+<meta property="og:type" content="article">
+<style>
+  :root {
+    --navy: #1B3A5C;
+    --navy-dark: #132943;
+    --green: #2E7D32;
+    --amber: #B26A00;
+    --red: #B3261E;
+    --ink: #1a1a2e;
+    --muted: #5b6775;
+    --line: #e2e7ec;
+    --bg: #f7f9fb;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    max-width: 960px; margin: 0 auto; padding: 24px;
+    color: var(--ink); line-height: 1.65; font-size: 15px;
+    background: var(--bg);
+  }
+  a { color: var(--navy); }
+
+  /* Header */
+  .page-header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: #fff;
+    padding: 32px 28px;
+    border-radius: 10px;
+    margin: 8px 0 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .page-header h1 {
+    margin: 0 0 6px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .page-header .subtitle {
+    font-size: 14px; opacity: 0.88; margin: 0;
+  }
+  .page-header .eyebrow {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 1.3px;
+    opacity: 0.8; margin: 0 0 10px;
+  }
+
+  /* Verdict banner */
+  .verdict {
+    background: #fff7e6;
+    border-left: 5px solid #f0a500;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    margin: 0 0 24px;
+  }
+  .verdict .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+    color: var(--amber); font-weight: 700; margin: 0 0 4px;
+  }
+  .verdict .score {
+    font-size: 22px; font-weight: 700; color: var(--ink); margin: 0 0 6px;
+  }
+  .verdict .note {
+    font-size: 14px; color: var(--muted); margin: 0;
+  }
+
+  /* Section headers */
+  h2 {
+    color: var(--navy); font-size: 19px; margin: 36px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--navy);
+  }
+  h3 {
+    color: var(--ink); font-size: 16px; margin: 18px 0 8px;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse; width: 100%; margin: 12px 0 18px;
+    font-size: 14px; background: var(--card);
+    border-radius: 8px; overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  th {
+    background: var(--navy); color: white; padding: 10px 14px;
+    text-align: left; font-weight: 600; font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  td {
+    padding: 10px 14px; border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #f6f8fa; }
+  tr:last-child td { border-bottom: none; }
+
+  /* Category table column alignment */
+  .cat-table td:nth-child(1),
+  .cat-table td:nth-child(3),
+  .cat-table td:nth-child(4),
+  .cat-table td:nth-child(5),
+  .cat-table td:nth-child(6),
+  .cat-table td:nth-child(7),
+  .cat-table td:nth-child(8) { text-align: center; }
+  .cat-table td:nth-child(2) { font-weight: 500; }
+
+  /* Status pills */
+  .pill {
+    display: inline-block; font-size: 12px; font-weight: 600;
+    padding: 3px 10px; border-radius: 12px;
+    letter-spacing: 0.3px;
+  }
+  .pill.pass { background: #e8f5e9; color: var(--green); }
+  .pill.warn { background: #fff4e0; color: var(--amber); }
+  .pill.fail { background: #fde8e7; color: var(--red); }
+
+  /* Metadata block */
+  .meta-table td:first-child { font-weight: 600; width: 42%; color: var(--muted); }
+
+  /* Fail-item cards */
+  .fail-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--red);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 10px 0;
+  }
+  .fail-card.warn { border-left-color: var(--amber); }
+  .fail-card .fail-title {
+    font-weight: 600; color: var(--ink); margin: 0 0 6px;
+    font-size: 15px;
+  }
+  .fail-card .fail-quote {
+    font-style: italic; color: var(--muted); margin: 4px 0;
+    padding-left: 10px; border-left: 2px solid var(--line);
+  }
+  .fail-card ul { margin: 6px 0; padding-left: 22px; }
+  .fail-card li { margin: 3px 0; }
+  .fail-card .fix {
+    background: #e8f5e9; color: var(--ink);
+    padding: 8px 12px; border-radius: 4px;
+    margin: 10px 0 0; font-size: 14px;
+    border-left: 3px solid var(--green);
+  }
+  .fail-card .fix strong { color: var(--green); }
+
+  /* Category group */
+  .cat-group {
+    margin: 22px 0 0;
+  }
+  .cat-group h3 {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 6px;
+  }
+  .cat-group h3 .score-chip {
+    font-size: 12px; font-weight: 600;
+    padding: 2px 10px; border-radius: 10px;
+    background: #eef2f7; color: var(--navy);
+  }
+
+  /* Collapsible */
+  details {
+    border: 1px solid var(--line); border-radius: 8px;
+    margin: 16px 0 28px;
+    background: var(--card);
+    overflow: hidden;
+  }
+  summary {
+    cursor: pointer; font-weight: 600; color: var(--navy);
+    padding: 14px 18px;
+    background: #f0f4f8;
+    list-style: none;
+    user-select: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before {
+    content: "▶ "; font-size: 11px; color: var(--navy); margin-right: 6px;
+  }
+  details[open] summary::before { content: "▼ "; }
+  details[open] summary { border-bottom: 1px solid var(--line); }
+  details .detail-inner { padding: 8px 22px 18px; }
+
+  /* Strengths list */
+  .strengths {
+    background: #e8f5e9;
+    border-radius: 8px;
+    padding: 16px 22px 16px 18px;
+    margin: 0 0 20px;
+    border-left: 4px solid var(--green);
+  }
+  .strengths ul { margin: 4px 0; padding-left: 22px; }
+  .strengths li { margin: 6px 0; }
+
+  /* Fix checklist */
+  .checklist {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 8px 0 20px;
+  }
+  .checklist ol { margin: 8px 0 0; padding-left: 22px; }
+  .checklist li { margin: 8px 0; }
+
+  /* Lists & text */
+  ul, ol { padding-left: 22px; }
+  li { margin: 5px 0; }
+  hr {
+    border: none; border-top: 1px solid var(--line); margin: 28px 0;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center; font-size: 13px; color: var(--muted);
+    padding: 20px 0; margin-top: 40px; border-top: 1px solid var(--line);
+  }
+
+  /* Reduce heavy horizontal rules from source */
+  .sep { display: none; }
+
+  /* Print */
+  @media print {
+    body { font-size: 11px; padding: 0; background: white; max-width: none; }
+    .page-header { box-shadow: none; break-after: avoid; }
+    details { break-inside: avoid; }
+    details[open] summary { page-break-after: avoid; }
+    h2 { page-break-after: avoid; }
+    table { page-break-inside: avoid; }
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    body { padding: 12px; font-size: 14px; }
+    .page-header { padding: 22px 18px; }
+    .page-header h1 { font-size: 21px; }
+    table { font-size: 13px; }
+    th, td { padding: 8px 10px; }
+    .cat-table td:nth-child(2) { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <p class="eyebrow">Reading's a Breeze · Quality Assurance</p>
+  <h1>E-Book Quality Assessment Report</h1>
+  <p class="subtitle">My Five Senses · Kindergarten · Revised 2026-03-24</p>
+</header>
+
+<table class="meta-table">
+  <tbody>
+    <tr><td>Book Title</td><td>My Five Senses</td></tr>
+    <tr><td>Topic / Core Knowledge Domain</td><td>The Five Senses (Science — CKSci Unit 5 / CKLA Domain 2)</td></tr>
+    <tr><td>Target Grade</td><td>Kindergarten</td></tr>
+    <tr><td>Date Assessed</td><td>2026-03-24 (Revised)</td></tr>
+    <tr><td>Assessor</td><td>Claude QC Evaluator (Usborne Benchmark)</td></tr>
+  </tbody>
+</table>
+
+<div class="verdict">
+  <p class="label">Overall Verdict</p>
+  <p class="score">⚠️ Conditional Pass — 83% (71/86 applicable items passed)</p>
+  <p class="note">Two categories remain below 70%: Content Accuracy (57%) and Series Consistency (67%). The required fixes are straightforward text edits and additions — the book's structure, design, and pedagogy are strong.</p>
+</div>
+
+<h2>Category Breakdown</h2>
+
+<table class="cat-table">
+  <thead>
+    <tr>
+      <th>#</th><th>Category</th><th>Passed</th><th>Failed</th><th>NA</th><th>Score</th><th>Status</th><th>Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Educational Value &amp; Curriculum</td><td>7</td><td>1</td><td>0</td><td>88%</td><td><span class="pill pass">Pass</span></td><td>—</td></tr>
+    <tr><td>2</td><td>Language &amp; Text Complexity</td><td>7</td><td>1</td><td>0</td><td>88%</td><td><span class="pill pass">Pass</span></td><td>—</td></tr>
+    <tr><td>3</td><td>Grammar, Spelling &amp; Conventions</td><td>7</td><td>1</td><td>0</td><td>88%</td><td><span class="pill pass">Pass</span></td><td>—</td></tr>
+    <tr><td>4</td><td>Content Accuracy</td><td>4</td><td>3</td><td>0</td><td>57%</td><td><span class="pill fail">Fail</span></td><td>—</td></tr>
+    <tr><td>5</td><td>Layout &amp; Design Consistency</td><td>9</td><td>0</td><td>0</td><td>100%</td><td><span class="pill pass">Pass</span></td><td>⬆ from 78%</td></tr>
+    <tr><td>6</td><td>Visual Appeal</td><td>6</td><td>1</td><td>1</td><td>86%</td><td><span class="pill pass">Pass</span></td><td>⬆ from 71%</td></tr>
+    <tr><td>7</td><td>Read-Along &amp; Audio Quality</td><td>6</td><td>0</td><td>3</td><td>100%</td><td><span class="pill pass">Pass</span></td><td>—</td></tr>
+    <tr><td>8</td><td>Interactivity &amp; Digital Functionality</td><td>6</td><td>2</td><td>0</td><td>75%</td><td><span class="pill warn">Warn</span></td><td>—</td></tr>
+    <tr><td>9</td><td>Accessibility &amp; Inclusion</td><td>5</td><td>2</td><td>0</td><td>71%</td><td><span class="pill warn">Warn</span></td><td>⬆ from 43%</td></tr>
+    <tr><td>10</td><td>Series Consistency &amp; Branding</td><td>4</td><td>2</td><td>0</td><td>67%</td><td><span class="pill fail">Fail</span></td><td>⬆ from 50%</td></tr>
+    <tr><td>11</td><td>Engagement &amp; Pedagogy</td><td>5</td><td>1</td><td>0</td><td>83%</td><td><span class="pill pass">Pass</span></td><td>—</td></tr>
+    <tr><td>12</td><td>Technical &amp; Publishing Quality</td><td>5</td><td>1</td><td>1</td><td>83%</td><td><span class="pill pass">Pass</span></td><td>—</td></tr>
+  </tbody>
+</table>
+<p style="font-size:13px;color:var(--muted);margin-top:-8px"><strong>Legend:</strong> <span class="pill pass">Pass</span> ≥80% &nbsp;·&nbsp; <span class="pill warn">Warn</span> 70–79% &nbsp;·&nbsp; <span class="pill fail">Fail</span> &lt;70%</p>
+
+<h2>Items Reclassified After Author Clarification</h2>
+
+<table>
+  <thead>
+    <tr><th>Item</th><th>Previous</th><th>Revised</th><th>Reason</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cover art communicates topic</td>
+      <td><span class="pill fail">Fail</span></td>
+      <td><span class="pill pass">Pass</span></td>
+      <td>Screenshot confirms title and all five senses are clearly depicted on cover</td>
+    </tr>
+    <tr>
+      <td>Uniform image style</td>
+      <td><span class="pill fail">Fail</span></td>
+      <td><span class="pill pass">Pass</span></td>
+      <td>Screenshots and thumbnails confirm consistent illustrated style with same character throughout</td>
+    </tr>
+    <tr>
+      <td>Progress indicators</td>
+      <td><span class="pill fail">Fail</span></td>
+      <td><span class="pill pass">Pass</span></td>
+      <td>Thumbnail navigation bar visible on tap/click shows all pages numbered 1–12</td>
+    </tr>
+    <tr>
+      <td>Credits / back matter</td>
+      <td><span class="pill fail">Fail</span></td>
+      <td><span class="pill pass">Pass</span></td>
+      <td>Credits page exists at end of book (confirmed in Spanish PDF version) — placement at end is deliberate and appropriate</td>
+    </tr>
+    <tr>
+      <td>Multilingual support</td>
+      <td><span class="pill fail">Fail</span></td>
+      <td><span class="pill pass">Pass</span></td>
+      <td>Monolingual separation by localization mode is a deliberate, research-based design decision — bilingual research shows co-presentation causes L1 interference</td>
+    </tr>
+    <tr>
+      <td>Diverse representation</td>
+      <td><span class="pill fail">Fail</span></td>
+      <td><span class="pill pass">Pass</span></td>
+      <td>Consistent single character within each title is appropriate for illustration consistency and the Canva/ElevenLabs workflow; diversity will be represented across the series through varied characters in different books</td>
+    </tr>
+  </tbody>
+</table>
+
+<details open>
+<summary>Remaining FAIL items — full detail</summary>
+<div class="detail-inner">
+
+<div class="cat-group">
+<h3>Category 4: Content Accuracy <span class="score-chip">57%</span></h3>
+
+<div class="fail-card">
+  <p class="fail-title">Taste bud misconception (page 11)</p>
+  <p class="fail-quote">"Your tongue has lots of tiny bumps. The bumps help you taste."</p>
+  <ul><li>The bumps are papillae; taste buds are inside them. Not all papillae contain taste buds (filiform papillae do not).</li></ul>
+  <p class="fix"><strong>Recommended fix:</strong> "Your tongue has tiny taste buds. They help you taste!"</p>
+</div>
+
+<div class="fail-card">
+  <p class="fail-title">Taste bud count (page 11)</p>
+  <p class="fail-quote">"You have about eight thousand of them!"</p>
+  <ul><li>Children have approximately 10,000 taste buds. Decline doesn't begin until ~age 40.</li></ul>
+  <p class="fix"><strong>Recommended fix:</strong> "You have about ten thousand of them!"</p>
+</div>
+
+<div class="fail-card">
+  <p class="fail-title">Core Knowledge scope alignment</p>
+  <ul><li>CK teacher guides include senses and safety, and CKLA Domain 2 includes sensory disability awareness. Neither is currently addressed.</li></ul>
+  <p class="fix"><strong>Recommended fix:</strong> Add a safety page and inclusivity sentences (see Planner PDF for exact content).</p>
+</div>
+</div>
+
+<div class="cat-group">
+<h3>Category 8: Interactivity &amp; Digital Functionality <span class="score-chip">75%</span></h3>
+
+<div class="fail-card warn">
+  <p class="fail-title">Visual affordances for interactive elements</p>
+  <ul><li>Content page words and images lack visible cues indicating they are tappable.</li></ul>
+  <p class="fix"><strong>Recommended fix:</strong> Add subtle visual affordances (glow, pulse, or icon) to interactive elements.</p>
+</div>
+
+<div class="fail-card warn">
+  <p class="fail-title">Interactivity density</p>
+  <ul><li>Only 2 of 10 content pages have dedicated interactive elements beyond read-along.</li></ul>
+  <p class="fix"><strong>Recommended fix:</strong> Add at least one interactive element per content page (tap sounds, animations, etc.).</p>
+</div>
+</div>
+
+<div class="cat-group">
+<h3>Category 9: Accessibility &amp; Inclusion <span class="score-chip">71%</span></h3>
+
+<div class="fail-card warn">
+  <p class="fail-title">Alt text missing on all images</p>
+  <ul><li>Every image across all 12 pages has empty alt attributes. High-priority fix.</li></ul>
+  <p class="fix"><strong>Recommended fix:</strong> See Planner PDF for suggested alt text for each page.</p>
+</div>
+
+<div class="fail-card warn">
+  <p class="fail-title">Sensory disabilities not acknowledged</p>
+  <ul><li>No mention of blindness, deafness, or assistive devices.</li></ul>
+  <p class="fix"><strong>Recommended fix:</strong> See Planner PDF for inclusivity sentences.</p>
+</div>
+</div>
+
+<div class="cat-group">
+<h3>Category 10: Series Consistency &amp; Branding <span class="score-chip">67%</span></h3>
+
+<div class="fail-card">
+  <p class="fail-title">Grade level indicator not on book</p>
+  <ul><li>No visible grade / reading level on the cover or title page (planned to be added).</li></ul>
+  <p class="fix"><strong>Recommended fix:</strong> Add "Kindergarten" or "Level K" label and Reading's a Breeze logo to cover.</p>
+</div>
+
+<div class="fail-card">
+  <p class="fail-title">Cross-references to related titles</p>
+  <ul><li>No "More books in this series" page.</li></ul>
+  <p class="fix"><strong>Recommended fix:</strong> Add a final page showing other titles (The Seven Continents, etc.).</p>
+</div>
+</div>
+
+<div class="cat-group">
+<h3>Category 11: Engagement &amp; Pedagogy <span class="score-chip">83%</span></h3>
+
+<div class="fail-card">
+  <p class="fail-title">No hands-on "Try This" activity</p>
+  <p class="fix"><strong>Recommended fix:</strong> Add one experiment suggestion (see Planner PDF).</p>
+</div>
+</div>
+
+<div class="cat-group">
+<h3>Category 12: Technical &amp; Publishing Quality <span class="score-chip">83%</span></h3>
+
+<div class="fail-card">
+  <p class="fail-title">Metadata shows "Kathryn Macfarlane's Project"</p>
+  <p class="fix"><strong>Recommended fix:</strong> Update to "My Five Senses" with complete metadata.</p>
+</div>
+</div>
+
+<div class="cat-group">
+<h3>Category 3: Grammar, Spelling &amp; Conventions <span class="score-chip">88%</span></h3>
+
+<div class="fail-card">
+  <p class="fail-title">"Dog poo" register</p>
+  <p class="fix"><strong>Recommended fix:</strong> Replace with "A skunk smells bad" or "Rotten eggs smell bad."</p>
+</div>
+</div>
+
+<div class="cat-group">
+<h3>Category 2: Language &amp; Text Complexity <span class="score-chip">88%</span></h3>
+
+<div class="fail-card">
+  <p class="fail-title">No literal comprehension questions in text</p>
+  <p class="fix"><strong>Recommended fix:</strong> Add 1–2 recall questions (e.g., "Can you name them?" after listing the five senses).</p>
+</div>
+</div>
+
+<div class="cat-group">
+<h3>Category 1: Educational Value &amp; Curriculum <span class="score-chip">88%</span></h3>
+
+<div class="fail-card">
+  <p class="fail-title">Content depth vs Usborne benchmark</p>
+  <p class="fix"><strong>Recommended fix:</strong> Add 2–3 additional "Did you know?" callouts and the safety page.</p>
+</div>
+</div>
+
+</div>
+</details>
+
+<h2>Strengths</h2>
+<div class="strengths">
+<ul>
+  <li><strong>Outstanding accessibility-first design</strong> — OpenDyslexic3 font, word-level audio highlighting, bilingual support via research-based monolingual localization.</li>
+  <li><strong>Professional, vibrant cover art</strong> depicting all five senses with an engaging central character.</li>
+  <li><strong>Consistent illustrated style</strong> throughout — same character, same artistic approach, cohesive visual identity.</li>
+  <li><strong>Strong series brand</strong> — "Reading's a Breeze" identity, consistent format across K–2 titles.</li>
+  <li><strong>Pedagogically sound structure</strong> — Word Wall (5 items matching K working memory capacity) → content → quiz.</li>
+  <li><strong>Excellent read-along architecture</strong> with word-level spans and MediaOverlay support.</li>
+  <li><strong>CCSS-aligned</strong> for RI.K.1 and RI.K.2 with embedded questions and clear main topic.</li>
+</ul>
+</div>
+
+<h2>What's Needed for a Full Pass</h2>
+<div class="checklist">
+<p style="margin:0 0 4px">The book needs <strong>text-level fixes</strong> to reach PASS. None require structural changes — the book's design, layout, pedagogy, and technology are all strong.</p>
+<ol>
+  <li>✏️ Rewrite taste bud sentences (page 11) — 2 sentences</li>
+  <li>✏️ Replace "Dog poo" (page 8) — 1 sentence</li>
+  <li>➕ Add safety page — 1 new page (see Planner)</li>
+  <li>➕ Add inclusivity sentences — 2 short sentences (see Planner)</li>
+  <li>🏷️ Add alt text to all images — 12 pages (see Planner)</li>
+  <li>🏷️ Update metadata title</li>
+  <li>➕ Add grade level to cover (planned)</li>
+  <li>➕ Add "More Books in this Series" page (planned)</li>
+</ol>
+</div>
+
+<footer>
+  Report generated 2026-03-24 (Revised) by Claude QC Evaluator · Reading's a Breeze series
+</footer>
+
+</body>
+</html>
