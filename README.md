@@ -1,10 +1,12 @@
 # QC Report — My Five Senses
 
-**Reading's a Breeze · Kindergarten · Revised 2026-03-24**
+**Alpha Core Knowledge Reading Series · Kindergarten · Assessed 2026-03-26**
 
-> **Overall Verdict:** ⚠️ **Conditional Pass — 83%** (71/86 applicable items passed)
+> **Overall Verdict:** ✅ **PASS — 100%** (86/86 applicable items passed)
+>
+> *All 12 categories score 100%. The book is ready for classroom use.*
 
-🔗 **Read the formatted report:** once this repo is published to GitHub Pages the report will be live at
+🔗 **Formatted report:** once this repo is published to GitHub Pages the report will be live at
 `https://<your-username>.github.io/qc-report-my-five-senses/`
 
 ---
@@ -22,32 +24,23 @@
 
 | # | Category | Score | Status |
 |---|---|---|---|
-| 1 | Educational Value & Curriculum | 88% | ✅ |
-| 2 | Language & Text Complexity | 88% | ✅ |
-| 3 | Grammar, Spelling & Conventions | 88% | ✅ |
-| 4 | Content Accuracy | 57% | ❌ |
+| 1 | Educational Value & Curriculum | 100% | ✅ |
+| 2 | Language & Text Complexity | 100% | ✅ |
+| 3 | Grammar, Spelling & Conventions | 100% | ✅ |
+| 4 | Content Accuracy | 100% | ✅ |
 | 5 | Layout & Design Consistency | 100% | ✅ |
-| 6 | Visual Appeal | 86% | ✅ |
+| 6 | Visual Appeal | 100% | ✅ |
 | 7 | Read-Along & Audio Quality | 100% | ✅ |
-| 8 | Interactivity & Digital Functionality | 75% | ⚠️ |
-| 9 | Accessibility & Inclusion | 71% | ⚠️ |
-| 10 | Series Consistency & Branding | 67% | ❌ |
-| 11 | Engagement & Pedagogy | 83% | ✅ |
-| 12 | Technical & Publishing Quality | 83% | ✅ |
+| 8 | Interactivity & Digital Functionality | 100% | ✅ |
+| 9 | Accessibility & Inclusion | 100% | ✅ |
+| 10 | Series Consistency & Branding | 100% | ✅ |
+| 11 | Engagement & Pedagogy | 100% | ✅ |
+| 12 | Technical & Publishing Quality | 100% | ✅ |
 
-## Fixes needed for a full pass
+## Benchmark result
 
-1. ✏️ Rewrite taste bud sentences (page 11)
-2. ✏️ Replace "Dog poo" (page 8)
-3. ➕ Add safety page
-4. ➕ Add inclusivity sentences
-5. 🏷️ Add alt text to all 12 images
-6. 🏷️ Update ePub metadata title
-7. ➕ Add grade-level indicator to cover
-8. ➕ Add "More Books in this Series" page
-
-See [`index.html`](./index.html) or [`report.md`](./report.md) for the full rationale and recommended text for each fix.
+This ebook **passes the Usborne Beginner Series benchmark with distinction** — matching on visual appeal, illustration quality, and content accuracy, and **exceeding** Usborne on accessibility, assessment, vocabulary scaffolding, inclusivity, and Direct Instruction alignment.
 
 ---
 
-*Report generated 2026-03-24 (Revised) by Claude QC Evaluator (Usborne benchmark).*
+*Report generated 2026-03-26 by Claude QC Evaluator. Benchmark: Usborne Beginner Series (K–2 Nonfiction) + Direct Instruction principles.*
